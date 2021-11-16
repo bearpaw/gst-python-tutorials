@@ -31,3 +31,8 @@ python launch_pipeline/run_appsink.py -p "videotestsrc num-buffers=100 ! capsfil
 ```bash
 python launch_pipeline/run_appsrc.py -p "appsrc emit-signals=True is-live=True caps=video/x-raw,format=RGB,width=640,height=480 ! queue ! videoconvert ! autovideosink"  -n 1000
 ```
+
+Example using `Gst.ElementFactory`
+```bash
+python launch_pipeline/run_appsrc.py -p "appsrc emit-signals=True is-live=True caps=video/x-raw,format=RGB,width=640,height=480 ! queue ! videoconvert ! autovideosink"  -n 1000
+```
